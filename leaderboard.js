@@ -5,4 +5,9 @@ if(Meteor.isClient){
       return PlayersList.find();
     }
   })
+  Template.leaderboard.events({
+    "click .player": function(){
+      alert("You clicked a .player!")
+    }
+  })
 }
